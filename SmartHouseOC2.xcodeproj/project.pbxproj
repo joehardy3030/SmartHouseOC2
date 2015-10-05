@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D810BC181BC20A7800152007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D810BC171BC20A7800152007 /* main.m */; };
+		D810BC1B1BC20A7800152007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D810BC1A1BC20A7800152007 /* AppDelegate.m */; };
+		D810BC1E1BC20A7800152007 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D810BC1D1BC20A7800152007 /* ViewController.m */; };
+		D810BC211BC20A7800152007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D810BC1F1BC20A7800152007 /* Main.storyboard */; };
+		D810BC231BC20A7800152007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D810BC221BC20A7800152007 /* Assets.xcassets */; };
+		D810BC261BC20A7800152007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D810BC241BC20A7800152007 /* LaunchScreen.storyboard */; };
+		D810BC311BC20A7800152007 /* SmartHouseOC2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D810BC301BC20A7800152007 /* SmartHouseOC2Tests.m */; };
+		D810BC3C1BC20A7800152007 /* SmartHouseOC2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D810BC3B1BC20A7800152007 /* SmartHouseOC2UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D810BC2D1BC20A7800152007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D810BC0B1BC20A7800152007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D810BC121BC20A7800152007;
+			remoteInfo = SmartHouseOC2;
+		};
+		D810BC381BC20A7800152007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D810BC0B1BC20A7800152007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D810BC121BC20A7800152007;
+			remoteInfo = SmartHouseOC2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D810BC131BC20A7800152007 /* SmartHouseOC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHouseOC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D810BC171BC20A7800152007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D810BC191BC20A7800152007 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D810BC1A1BC20A7800152007 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D810BC1C1BC20A7800152007 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D810BC1D1BC20A7800152007 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D810BC201BC20A7800152007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D810BC221BC20A7800152007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D810BC251BC20A7800152007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D810BC271BC20A7800152007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D810BC2C1BC20A7800152007 /* SmartHouseOC2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHouseOC2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D810BC301BC20A7800152007 /* SmartHouseOC2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHouseOC2Tests.m; sourceTree = "<group>"; };
+		D810BC321BC20A7800152007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D810BC371BC20A7800152007 /* SmartHouseOC2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHouseOC2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D810BC3B1BC20A7800152007 /* SmartHouseOC2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHouseOC2UITests.m; sourceTree = "<group>"; };
+		D810BC3D1BC20A7800152007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D810BC101BC20A7800152007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D810BC291BC20A7800152007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D810BC341BC20A7800152007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D810BC0A1BC20A7800152007 = {
+			isa = PBXGroup;
+			children = (
+				D810BC151BC20A7800152007 /* SmartHouseOC2 */,
+				D810BC2F1BC20A7800152007 /* SmartHouseOC2Tests */,
+				D810BC3A1BC20A7800152007 /* SmartHouseOC2UITests */,
+				D810BC141BC20A7800152007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D810BC141BC20A7800152007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D810BC131BC20A7800152007 /* SmartHouseOC2.app */,
+				D810BC2C1BC20A7800152007 /* SmartHouseOC2Tests.xctest */,
+				D810BC371BC20A7800152007 /* SmartHouseOC2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D810BC151BC20A7800152007 /* SmartHouseOC2 */ = {
+			isa = PBXGroup;
+			children = (
+				D810BC191BC20A7800152007 /* AppDelegate.h */,
+				D810BC1A1BC20A7800152007 /* AppDelegate.m */,
+				D810BC1C1BC20A7800152007 /* ViewController.h */,
+				D810BC1D1BC20A7800152007 /* ViewController.m */,
+				D810BC1F1BC20A7800152007 /* Main.storyboard */,
+				D810BC221BC20A7800152007 /* Assets.xcassets */,
+				D810BC241BC20A7800152007 /* LaunchScreen.storyboard */,
+				D810BC271BC20A7800152007 /* Info.plist */,
+				D810BC161BC20A7800152007 /* Supporting Files */,
+			);
+			path = SmartHouseOC2;
+			sourceTree = "<group>";
+		};
+		D810BC161BC20A7800152007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D810BC171BC20A7800152007 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D810BC2F1BC20A7800152007 /* SmartHouseOC2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D810BC301BC20A7800152007 /* SmartHouseOC2Tests.m */,
+				D810BC321BC20A7800152007 /* Info.plist */,
+			);
+			path = SmartHouseOC2Tests;
+			sourceTree = "<group>";
+		};
+		D810BC3A1BC20A7800152007 /* SmartHouseOC2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D810BC3B1BC20A7800152007 /* SmartHouseOC2UITests.m */,
+				D810BC3D1BC20A7800152007 /* Info.plist */,
+			);
+			path = SmartHouseOC2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D810BC121BC20A7800152007 /* SmartHouseOC2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D810BC401BC20A7800152007 /* Build configuration list for PBXNativeTarget "SmartHouseOC2" */;
+			buildPhases = (
+				D810BC0F1BC20A7800152007 /* Sources */,
+				D810BC101BC20A7800152007 /* Frameworks */,
+				D810BC111BC20A7800152007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartHouseOC2;
+			productName = SmartHouseOC2;
+			productReference = D810BC131BC20A7800152007 /* SmartHouseOC2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D810BC2B1BC20A7800152007 /* SmartHouseOC2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D810BC431BC20A7800152007 /* Build configuration list for PBXNativeTarget "SmartHouseOC2Tests" */;
+			buildPhases = (
+				D810BC281BC20A7800152007 /* Sources */,
+				D810BC291BC20A7800152007 /* Frameworks */,
+				D810BC2A1BC20A7800152007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D810BC2E1BC20A7800152007 /* PBXTargetDependency */,
+			);
+			name = SmartHouseOC2Tests;
+			productName = SmartHouseOC2Tests;
+			productReference = D810BC2C1BC20A7800152007 /* SmartHouseOC2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D810BC361BC20A7800152007 /* SmartHouseOC2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D810BC461BC20A7800152007 /* Build configuration list for PBXNativeTarget "SmartHouseOC2UITests" */;
+			buildPhases = (
+				D810BC331BC20A7800152007 /* Sources */,
+				D810BC341BC20A7800152007 /* Frameworks */,
+				D810BC351BC20A7800152007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D810BC391BC20A7800152007 /* PBXTargetDependency */,
+			);
+			name = SmartHouseOC2UITests;
+			productName = SmartHouseOC2UITests;
+			productReference = D810BC371BC20A7800152007 /* SmartHouseOC2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D810BC0B1BC20A7800152007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Joseph Hardy";
+				TargetAttributes = {
+					D810BC121BC20A7800152007 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					D810BC2B1BC20A7800152007 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = D810BC121BC20A7800152007;
+					};
+					D810BC361BC20A7800152007 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = D810BC121BC20A7800152007;
+					};
+				};
+			};
+			buildConfigurationList = D810BC0E1BC20A7800152007 /* Build configuration list for PBXProject "SmartHouseOC2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D810BC0A1BC20A7800152007;
+			productRefGroup = D810BC141BC20A7800152007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D810BC121BC20A7800152007 /* SmartHouseOC2 */,
+				D810BC2B1BC20A7800152007 /* SmartHouseOC2Tests */,
+				D810BC361BC20A7800152007 /* SmartHouseOC2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D810BC111BC20A7800152007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D810BC261BC20A7800152007 /* LaunchScreen.storyboard in Resources */,
+				D810BC231BC20A7800152007 /* Assets.xcassets in Resources */,
+				D810BC211BC20A7800152007 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D810BC2A1BC20A7800152007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D810BC351BC20A7800152007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D810BC0F1BC20A7800152007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D810BC1E1BC20A7800152007 /* ViewController.m in Sources */,
+				D810BC1B1BC20A7800152007 /* AppDelegate.m in Sources */,
+				D810BC181BC20A7800152007 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D810BC281BC20A7800152007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D810BC311BC20A7800152007 /* SmartHouseOC2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D810BC331BC20A7800152007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D810BC3C1BC20A7800152007 /* SmartHouseOC2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D810BC2E1BC20A7800152007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D810BC121BC20A7800152007 /* SmartHouseOC2 */;
+			targetProxy = D810BC2D1BC20A7800152007 /* PBXContainerItemProxy */;
+		};
+		D810BC391BC20A7800152007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D810BC121BC20A7800152007 /* SmartHouseOC2 */;
+			targetProxy = D810BC381BC20A7800152007 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D810BC1F1BC20A7800152007 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D810BC201BC20A7800152007 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D810BC241BC20A7800152007 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D810BC251BC20A7800152007 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D810BC3E1BC20A7800152007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D810BC3F1BC20A7800152007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D810BC411BC20A7800152007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartHouseOC2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D810BC421BC20A7800152007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartHouseOC2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D810BC441BC20A7800152007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartHouseOC2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHouseOC2.app/SmartHouseOC2";
+			};
+			name = Debug;
+		};
+		D810BC451BC20A7800152007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartHouseOC2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHouseOC2.app/SmartHouseOC2";
+			};
+			name = Release;
+		};
+		D810BC471BC20A7800152007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartHouseOC2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartHouseOC2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D810BC481BC20A7800152007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartHouseOC2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartHouseOC2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D810BC0E1BC20A7800152007 /* Build configuration list for PBXProject "SmartHouseOC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D810BC3E1BC20A7800152007 /* Debug */,
+				D810BC3F1BC20A7800152007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D810BC401BC20A7800152007 /* Build configuration list for PBXNativeTarget "SmartHouseOC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D810BC411BC20A7800152007 /* Debug */,
+				D810BC421BC20A7800152007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D810BC431BC20A7800152007 /* Build configuration list for PBXNativeTarget "SmartHouseOC2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D810BC441BC20A7800152007 /* Debug */,
+				D810BC451BC20A7800152007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D810BC461BC20A7800152007 /* Build configuration list for PBXNativeTarget "SmartHouseOC2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D810BC471BC20A7800152007 /* Debug */,
+				D810BC481BC20A7800152007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D810BC0B1BC20A7800152007 /* Project object */;
+}
