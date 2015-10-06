@@ -34,10 +34,24 @@
     NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
                                           dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                               // 4: Handle response here
+                                              if(error == nil)
+                                              {
+                                                  NSString * text = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+                                                  NSLog(@"Data = %@",text);
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = text;
+                                                      });
+                                              }
+                                              else{
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = @"error";
+                                                      });
+                                              }
+
                                           }];
-    self.TextView.text = @"Stereo Off";
     
     // 3
+    self.TextView.text = @"Stereo Off";
     [downloadTask resume];
 }
 
@@ -50,11 +64,23 @@
     NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
                                           dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                               // 4: Handle response here
-                                          }];
-    self.TextView.text = @"Stereo On";
-
+                                              if(error == nil)
+                                              {
+                                                  NSString * text = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+                                                  NSLog(@"Data = %@",text);
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = text;
+                                                  });
+                                              }
+                                              else{
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = @"error";
+                                                  });
+                                              }
+                                             }];
     
     // 3
+    self.TextView.text = @"Stereo On";
     [downloadTask resume];
 }
 
