@@ -84,6 +84,93 @@
     [downloadTask resume];
 }
 
+- (IBAction)HeaterOn:(UIButton *)sender {
+    // 1
+    NSString *dataUrl = @"http://10.0.0.12/arduino/on3";
+    NSURL *url = [NSURL URLWithString:dataUrl];
+    
+    // 2
+    NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
+                                          dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                              // 4: Handle response here
+                                              if(error == nil)
+                                              {
+                                                  NSString * text = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+                                                  NSLog(@"Data = %@",text);
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = text;
+                                                  });
+                                              }
+                                              else{
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = @"error";
+                                                  });
+                                              }
+                                          }];
+    
+    // 3
+    self.TextView.text = @"Heater On";
+    [downloadTask resume];
+}
+
+- (IBAction)HeaterOff:(UIButton *)sender {
+    // 1
+    NSString *dataUrl = @"http://10.0.0.12/arduino/off";
+    NSURL *url = [NSURL URLWithString:dataUrl];
+    
+    // 2
+    NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
+                                          dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                              // 4: Handle response here
+                                              if(error == nil)
+                                              {
+                                                  NSString * text = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+                                                  NSLog(@"Data = %@",text);
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = text;
+                                                  });
+                                              }
+                                              else{
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = @"error";
+                                                  });
+                                              }
+                                          }];
+    
+    // 3
+    self.TextView.text = @"Heater Off";
+    [downloadTask resume];
+}
+
+- (IBAction)GarageDoor:(UIButton *)sender {
+    // 1
+    NSString *dataUrl = @"http://10.0.0.20/arduino/press";
+    NSURL *url = [NSURL URLWithString:dataUrl];
+    
+    // 2
+    NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
+                                          dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                              // 4: Handle response here
+                                              if(error == nil)
+                                              {
+                                                  NSString * text = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+                                                  NSLog(@"Data = %@",text);
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = text;
+                                                  });
+                                              }
+                                              else{
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = @"error";
+                                                  });
+                                              }
+                                          }];
+    
+    // 3
+    self.TextView.text = @"Garage Door\nPress\n";
+    [downloadTask resume];
+}
+
 //let url = NSURL(string: "http://10.0.0.20/arduino/outletOff")
 //var dataString:String = ""
 //let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in

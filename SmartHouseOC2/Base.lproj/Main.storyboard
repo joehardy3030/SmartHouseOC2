@@ -17,25 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igm-D9-9iq">
-                                <rect key="frame" x="37" y="98" width="67" height="30"/>
-                                <state key="normal" title="StereoOff"/>
+                                <rect key="frame" x="151" y="98" width="71" height="30"/>
+                                <state key="normal" title="Stereo Off"/>
                                 <connections>
                                     <action selector="StereoOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5M-82-reW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1a-zt-WMj">
-                                <rect key="frame" x="38" y="156" width="65" height="30"/>
-                                <state key="normal" title="StereoOn"/>
+                                <rect key="frame" x="35" y="98" width="69" height="30"/>
+                                <state key="normal" title="Stereo On"/>
                                 <connections>
                                     <action selector="StereoOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eE-N5-Ugl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaG-4n-hm1">
-                                <rect key="frame" x="72" y="458" width="269" height="134"/>
+                                <rect key="frame" x="72" y="458" width="345" height="134"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-hc-nhL">
+                                <rect key="frame" x="35" y="163" width="71" height="30"/>
+                                <state key="normal" title="Heater On"/>
+                                <connections>
+                                    <action selector="HeaterOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9JT-v4-uAX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8Z-8q-uWq">
+                                <rect key="frame" x="151" y="163" width="72" height="30"/>
+                                <state key="normal" title="Heater Off"/>
+                                <connections>
+                                    <action selector="HeaterOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Wb-KK-1Wg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6id-cK-hik">
+                                <rect key="frame" x="35" y="225" width="88" height="30"/>
+                                <state key="normal" title="Garage Door"/>
+                                <connections>
+                                    <action selector="GarageDoor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ez1-mo-p4O"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
