@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SmartHouseOC2.xcodeproj">
+      location = "self:/Users/joe/Dev/SmartHouseOC2/SHOC.xcodeproj">
    </FileRef>
 </Workspace>

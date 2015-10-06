@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D810BC121BC20A7800152007"
-               BuildableName = "SmartHouseOC2.app"
-               BlueprintName = "SmartHouseOC2"
-               ReferencedContainer = "container:SmartHouseOC2.xcodeproj">
+               BuildableName = "SHOC.app"
+               BlueprintName = "SHOC"
+               ReferencedContainer = "container:SHOC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D810BC2B1BC20A7800152007"
-               BuildableName = "SmartHouseOC2Tests.xctest"
-               BlueprintName = "SmartHouseOC2Tests"
-               ReferencedContainer = "container:SmartHouseOC2.xcodeproj">
+               BuildableName = "SHOC.xctest"
+               BlueprintName = "SHOCTests"
+               ReferencedContainer = "container:SHOC.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D810BC361BC20A7800152007"
-               BuildableName = "SmartHouseOC2UITests.xctest"
-               BlueprintName = "SmartHouseOC2UITests"
-               ReferencedContainer = "container:SmartHouseOC2.xcodeproj">
+               BuildableName = "SHOC.xctest"
+               BlueprintName = "SHOCUITests"
+               ReferencedContainer = "container:SHOC.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D810BC121BC20A7800152007"
-            BuildableName = "SmartHouseOC2.app"
-            BlueprintName = "SmartHouseOC2"
-            ReferencedContainer = "container:SmartHouseOC2.xcodeproj">
+            BuildableName = "SHOC.app"
+            BlueprintName = "SHOC"
+            ReferencedContainer = "container:SHOC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D810BC121BC20A7800152007"
-            BuildableName = "SmartHouseOC2.app"
-            BlueprintName = "SmartHouseOC2"
-            ReferencedContainer = "container:SmartHouseOC2.xcodeproj">
+            BuildableName = "SHOC.app"
+            BlueprintName = "SHOC"
+            ReferencedContainer = "container:SHOC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D810BC121BC20A7800152007"
-            BuildableName = "SmartHouseOC2.app"
-            BlueprintName = "SmartHouseOC2"
-            ReferencedContainer = "container:SmartHouseOC2.xcodeproj">
+            BuildableName = "SHOC.app"
+            BlueprintName = "SHOC"
+            ReferencedContainer = "container:SHOC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
