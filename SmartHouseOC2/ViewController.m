@@ -27,7 +27,7 @@
 
 - (IBAction)StereoOff:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.20/arduino/outletOff";
+    NSString *dataUrl = @"http://10.0.0.17/arduino/outletOff";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -57,7 +57,7 @@
 
 - (IBAction)StereoOn:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.20/arduino/outletOn";
+    NSString *dataUrl = @"http://10.0.0.17/arduino/outletOn";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -144,7 +144,7 @@
 
 - (IBAction)GarageDoor:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.20/arduino/press";
+    NSString *dataUrl = @"http://10.0.0.17/arduino/press";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -171,6 +171,22 @@
     [downloadTask resume];
 }
 
+- (IBAction)Spotify:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:
+     [NSURL URLWithString:
+      @"spotify://http://open.spotify.com/"]];
+}
+
+- (IBAction)Archiveorg:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:
+     [NSURL URLWithString:
+      @"googlechrome://www.archive.org/details/GratefulDead"]];
+}
+
+//http://api.openweathermap.org/data/2.5/forecast/hourly?/lat=37.92&lon=-122.3&APPID=e8848eb1f42cbe246efdcd5f57f918bd
+
+
+//http://api.wunderground.com/api/ffd1b93b6a497308/conditions/forecast/q/CA/El_Cerrito.json
 //let url = NSURL(string: "http://10.0.0.20/arduino/outletOff")
 //var dataString:String = ""
 //let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
