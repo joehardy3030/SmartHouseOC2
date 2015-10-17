@@ -86,7 +86,7 @@
 
 - (IBAction)HeaterOn:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.12/arduino/on3";
+    NSString *dataUrl = @"http://10.0.0.20/arduino/on3";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -115,7 +115,7 @@
 
 - (IBAction)HeaterOff:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.12/arduino/off";
+    NSString *dataUrl = @"http://10.0.0.20/arduino/off";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
