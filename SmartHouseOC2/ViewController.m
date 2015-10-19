@@ -183,6 +183,37 @@
       @"googlechrome://www.archive.org/details/GratefulDead"]];
 }
 
+- (IBAction)GetWeather:(UIButton *)sender {
+    //1
+    NSString *dataUrl = @"http://api.wunderground.com/api/ffd1b93b6a497308/conditions/forecast/q/CA/El_Cerrito.json";
+    NSURL *url = [NSURL URLWithString:dataUrl];
+    
+    // 2
+    NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
+                                          dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                              // 4: Handle response here
+                                              if(error == nil)
+                                              {
+                                                  NSString * text = [[NSString alloc] initWithData:data
+                                                                                          encoding:NSUTF8StringEncoding];
+                                                  NSLog(@"Data = %@",text);
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = text;
+                                                  });
+                                              }
+                                              else{
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      self.TextView.text = @"error";
+                                                  });
+                                              }
+                                          }];
+    
+    // 3
+    self.TextView.text = @"Get Weather\n";
+    [downloadTask resume];
+
+}
+
 //http://api.openweathermap.org/data/2.5/forecast/hourly?/lat=37.92&lon=-122.3&APPID=e8848eb1f42cbe246efdcd5f57f918bd
 
 
@@ -198,5 +229,11 @@
   //  } //dispatch_async
 //} //NSURLSession
 //task.resume()
+
+// NSError *jsonError;
+// NSData *objectData = [@"{\"2\":\"3\"}" dataUsingEncoding:NSUTF8StringEncoding];
+// NSDictionary *json = [NSJSONSerialization JSONObjectWithData:objectData
+//                                                     options:NSJSONReadingMutableContainers
+//                                                     error:&jsonError];
 
 @end
