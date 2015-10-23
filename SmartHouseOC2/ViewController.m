@@ -190,15 +190,28 @@
     
     // 2
     NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
-                                          dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                          dataTaskWithURL:url completionHandler:^(NSData *data,
+                                                                                  NSURLResponse *response,
+                                                                                  NSError *error) {
                                               // 4: Handle response here
                                               if(error == nil)
                                               {
-                                                  NSString * text = [[NSString alloc] initWithData:data
-                                                                                          encoding:NSUTF8StringEncoding];
-                                                  NSLog(@"Data = %@",text);
+                                                  NSString *text = [[NSString alloc] initWithData:data
+                                                                                         encoding:NSUTF8StringEncoding];
+                                                  
+                                                  NSData *jData = [text dataUsingEncoding:NSUTF8StringEncoding];
+                                                  NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jData options:0 error:nil];
+                                                  
+                                                  NSDictionary *currentObservation = [json objectForKey:@"current_observation"];
+                                                  NSString *currentTempF = [[currentObservation objectForKey:@"temp_f"]stringValue];
+                                                  
+                                                  //NSString *printTemp = [currentTempF objectAtIndex:0];
+                                                  //NSArray *currentTempF = [[currentObservation objectForKey:@"temp_f"] objectAtIndex:0];
+                                                  NSLog(@"%@",currentTempF);
+                                                  
+                                                  //NSLog(@"Data = %@",json);
                                                   dispatch_async(dispatch_get_main_queue(), ^{
-                                                      self.TextView.text = text;
+                                                      self.TextView.text = currentTempF;
                                                   });
                                               }
                                               else{
@@ -213,6 +226,11 @@
     [downloadTask resume];
 
 }
+
+
+//+ (id)JSONObjectWithData:(NSData *)data
+//                 options:(NSJSONReadingOptions)opt
+//                   error:(NSError * _Nullable *)error
 
 //http://api.openweathermap.org/data/2.5/forecast/hourly?/lat=37.92&lon=-122.3&APPID=e8848eb1f42cbe246efdcd5f57f918bd
 
