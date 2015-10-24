@@ -203,15 +203,48 @@
                                                   NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jData options:0 error:nil];
                                                   
                                                   NSDictionary *currentObservation = [json objectForKey:@"current_observation"];
-                                                  NSString *currentTempF = [[currentObservation objectForKey:@"temp_f"]stringValue];
+                                                  NSString *currentTemp = [currentObservation objectForKey:@"temperature_string"];
+                                                  //NSString *currentTempF = [[currentObservation objectForKey:@"temp_f"]stringValue];
                                                   
-                                                  //NSString *printTemp = [currentTempF objectAtIndex:0];
-                                                  //NSArray *currentTempF = [[currentObservation objectForKey:@"temp_f"] objectAtIndex:0];
-                                                  NSLog(@"%@",currentTempF);
+                                                  //Get current temperature string
+                                                  NSString *tempMessage = @"Current Temp: ";
+                                                  NSString *printString = [tempMessage stringByAppendingString:currentTemp];
+                                                  
+                                                  //Get current weather string and append to temp
+                                                  NSString *weatherString = [currentObservation objectForKey:@"weather"];
+                                                  printString = [printString stringByAppendingString:@"\n"];
+                                                  printString = [printString stringByAppendingString:weatherString];
+                                                  
+                                                  //Get currrent wind string and append to above
+                                                  NSString *windString = [currentObservation objectForKey:@"wind_string"];
+                                                  printString = [printString stringByAppendingString:@"\n"];
+                                                  printString = [printString stringByAppendingString:windString];
+                                                  
+                                                  //Get forecast for the rest of today
+                                                  NSDictionary *forecast = [json objectForKey:@"forecast"];
+                                                  NSDictionary *textForecast = [forecast objectForKey:@"txt_forecast"];
+                                                  NSArray *forecastDay = [textForecast objectForKey:@"forecastday"];
+                                                  
+                                                  //Get today's forecast
+                                                  NSDictionary *todayForecast = [forecastDay objectAtIndex:0];
+                                                  NSString *todayForecastText = [todayForecast objectForKey:@"fcttext"];
+                                                  //printString = [printString stringByAppendingString:@"\n"];
+                                                  printString = [printString stringByAppendingString:@"\n"];
+                                                  printString = [printString stringByAppendingString:todayForecastText];
+                                                  
+                                                  //Get tomorrow's forecast (12 hour chunks)
+                                                  NSDictionary *tomorrowForecast = [forecastDay objectAtIndex:2];
+                                                  NSString *tomorrowForecastText = [tomorrowForecast objectForKey:@"fcttext"];
+                                                  //printString = [printString stringByAppendingString:@"\n"];
+                                                  printString = [printString stringByAppendingString:@"\n"];
+                                                  printString = [printString stringByAppendingString:tomorrowForecastText];
+                                                  
+                                                  
+                                                  NSLog(@"%@",forecastDay);
                                                   
                                                   //NSLog(@"Data = %@",json);
                                                   dispatch_async(dispatch_get_main_queue(), ^{
-                                                      self.TextView.text = currentTempF;
+                                                      self.TextView.text = printString;
                                                   });
                                               }
                                               else{
