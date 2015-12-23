@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
 
@@ -18,6 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.TextView.text = @"Ready";
+    
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,7 +92,7 @@
 
 - (IBAction)HeaterOn:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.20/arduino/on3";
+    NSString *dataUrl = @"http://10.0.0.16/arduino/on3";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -115,7 +121,7 @@
 
 - (IBAction)HeaterOff:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.20/arduino/off";
+    NSString *dataUrl = @"http://10.0.0.16/arduino/off";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2

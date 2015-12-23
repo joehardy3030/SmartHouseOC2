@@ -15,6 +15,9 @@
 		D810BC261BC20A7800152007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D810BC241BC20A7800152007 /* LaunchScreen.storyboard */; };
 		D810BC311BC20A7800152007 /* SmartHouseOC2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D810BC301BC20A7800152007 /* SmartHouseOC2Tests.m */; };
 		D810BC3C1BC20A7800152007 /* SmartHouseOC2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D810BC3B1BC20A7800152007 /* SmartHouseOC2UITests.m */; };
+		D85E90401C2A2A9B0018187D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E903D1C2A2A9B0018187D /* FBSDKCoreKit.framework */; };
+		D85E90411C2A2A9B0018187D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E903E1C2A2A9B0018187D /* FBSDKLoginKit.framework */; };
+		D85E90421C2A2A9B0018187D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E903F1C2A2A9B0018187D /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D810BC371BC20A7800152007 /* SHOC.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHOC.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D810BC3B1BC20A7800152007 /* SmartHouseOC2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartHouseOC2UITests.m; sourceTree = "<group>"; };
 		D810BC3D1BC20A7800152007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85E903D1C2A2A9B0018187D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-20151111/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		D85E903E1C2A2A9B0018187D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-20151111/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		D85E903F1C2A2A9B0018187D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "FacebookSDKs-iOS-20151111/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85E90411C2A2A9B0018187D /* FBSDKLoginKit.framework in Frameworks */,
+				D85E90401C2A2A9B0018187D /* FBSDKCoreKit.framework in Frameworks */,
+				D85E90421C2A2A9B0018187D /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,7 @@
 				D810BC2F1BC20A7800152007 /* SmartHouseOC2Tests */,
 				D810BC3A1BC20A7800152007 /* SmartHouseOC2UITests */,
 				D810BC141BC20A7800152007 /* Products */,
+				D85E90431C2A2AA90018187D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +148,16 @@
 				D810BC3D1BC20A7800152007 /* Info.plist */,
 			);
 			path = SmartHouseOC2UITests;
+			sourceTree = "<group>";
+		};
+		D85E90431C2A2AA90018187D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85E903D1C2A2A9B0018187D /* FBSDKCoreKit.framework */,
+				D85E903E1C2A2A9B0018187D /* FBSDKLoginKit.framework */,
+				D85E903F1C2A2A9B0018187D /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +433,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151111",
+				);
 				INFOPLIST_FILE = SmartHouseOC2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2;
@@ -424,6 +448,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151111",
+				);
 				INFOPLIST_FILE = SmartHouseOC2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2;
