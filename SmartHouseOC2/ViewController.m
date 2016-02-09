@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+
 
 @interface ViewController ()
 
@@ -22,8 +24,29 @@
     self.TextView.text = @"Ready";
     
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
+    loginButton.center = CGPointMake(175, 600); //self.view.center;
     [self.view addSubview:loginButton];
+    
+    FBSDKShareButton *shareButton = [[FBSDKShareButton alloc] init];
+    shareButton.center = CGPointMake(175, 550); //self.view.center;
+   // NSString *shareConentString = @"Share Content";
+    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+    content.contentURL = [NSURL URLWithString:@"https://www.18birdies.com"];
+    shareButton.shareContent = content;
+    [self.view addSubview:shareButton];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
+    photo.image = image;
+    photo.userGenerated = YES;
+    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+    content.photos = @[photo];
+//    ...
 }
 
 - (void)didReceiveMemoryWarning {
@@ -266,6 +289,17 @@
 
 }
 
+- (IBAction)PhotoShare:(UIButton *)sender {
+    
+}
+
+- (IBAction)ShareDialog:(UIButton *)sender {
+    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+    content.contentURL = [NSURL URLWithString:@"https://18birdies.com"];
+    [FBSDKShareDialog showFromViewController:self
+                                 withContent:content
+                                    delegate:nil];
+}
 
 //+ (id)JSONObjectWithData:(NSData *)data
 //                 options:(NSJSONReadingOptions)opt
