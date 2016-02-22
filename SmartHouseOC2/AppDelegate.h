@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
+
+//@interface APPViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+//@end
 

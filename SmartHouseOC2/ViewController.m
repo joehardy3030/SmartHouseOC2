@@ -36,18 +36,6 @@
     [self.view addSubview:shareButton];
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker
-didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    UIImage *image = info[UIImagePickerControllerOriginalImage];
-    
-    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
-    photo.image = image;
-    photo.userGenerated = YES;
-    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
-    content.photos = @[photo];
-//    ...
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -289,17 +277,63 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 
 }
 
+
 - (IBAction)PhotoShare:(UIButton *)sender {
+
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
     
 }
 
 - (IBAction)ShareDialog:(UIButton *)sender {
-    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
-    content.contentURL = [NSURL URLWithString:@"https://18birdies.com"];
+    
+    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
+    photo.image = self.imageView.image;
+    photo.userGenerated = YES;
+    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+    content.photos = @[photo];
     [FBSDKShareDialog showFromViewController:self
                                  withContent:content
                                     delegate:nil];
+
 }
+
+#pragma mark - Image Picker Controller delegate methods
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+  
+
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+
+//- (void)imagePickerController:(UIImagePickerController *)picker
+//didFinishPickingMediaWithInfo:(NSDictionary *)info
+//{
+ //   UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+//    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
+//    photo.image = image;
+ //   photo.userGenerated = YES;
+ //   FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+ //   content.photos = @[photo];
+    //    ...
+//}
+
+
 
 //+ (id)JSONObjectWithData:(NSData *)data
 //                 options:(NSJSONReadingOptions)opt
