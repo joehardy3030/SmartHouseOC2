@@ -227,6 +227,7 @@
 				TargetAttributes = {
 					D810BC121BC20A7800152007 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 9HA3P2ES79;
 					};
 					D810BC2B1BC20A7800152007 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -433,6 +434,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151111",
@@ -441,6 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2;
 				PRODUCT_NAME = SHOC;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -448,6 +452,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDKs-iOS-20151111",
@@ -456,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Carquinez.SmartHouseOC2;
 				PRODUCT_NAME = SHOC;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

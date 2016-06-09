@@ -44,7 +44,7 @@
 
 - (IBAction)StereoOff:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.17/arduino/outletOff";
+    NSString *dataUrl = @"http://10.0.0.11/arduino/outletOff";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -74,7 +74,7 @@
 
 - (IBAction)StereoOn:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.17/arduino/outletOn";
+    NSString *dataUrl = @"http://10.0.0.11/arduino/outletOn";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -103,7 +103,7 @@
 
 - (IBAction)HeaterOn:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.16/arduino/on3";
+    NSString *dataUrl = @"http://10.0.0.12/arduino/on3";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -132,7 +132,7 @@
 
 - (IBAction)HeaterOff:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.16/arduino/off";
+    NSString *dataUrl = @"http://10.0.0.12/arduino/off";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
@@ -161,7 +161,7 @@
 
 - (IBAction)GarageDoor:(UIButton *)sender {
     // 1
-    NSString *dataUrl = @"http://10.0.0.17/arduino/press";
+    NSString *dataUrl = @"http://10.0.0.11/arduino/press";
     NSURL *url = [NSURL URLWithString:dataUrl];
     
     // 2
