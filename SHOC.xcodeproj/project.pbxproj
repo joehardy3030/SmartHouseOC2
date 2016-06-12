@@ -18,6 +18,7 @@
 		D85E90401C2A2A9B0018187D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E903D1C2A2A9B0018187D /* FBSDKCoreKit.framework */; };
 		D85E90411C2A2A9B0018187D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E903E1C2A2A9B0018187D /* FBSDKLoginKit.framework */; };
 		D85E90421C2A2A9B0018187D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85E903F1C2A2A9B0018187D /* FBSDKShareKit.framework */; };
+		D8E70DED1D0B1073003B9E76 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E70DEC1D0B1073003B9E76 /* XMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		D85E903D1C2A2A9B0018187D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-20151111/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		D85E903E1C2A2A9B0018187D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-20151111/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		D85E903F1C2A2A9B0018187D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "FacebookSDKs-iOS-20151111/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		D8E70DEB1D0B105F003B9E76 /* XMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		D8E70DEC1D0B1073003B9E76 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				D810BC1A1BC20A7800152007 /* AppDelegate.m */,
 				D810BC1C1BC20A7800152007 /* ViewController.h */,
 				D810BC1D1BC20A7800152007 /* ViewController.m */,
+				D8E70DEB1D0B105F003B9E76 /* XMLParser.h */,
+				D8E70DEC1D0B1073003B9E76 /* XMLParser.m */,
 				D810BC1F1BC20A7800152007 /* Main.storyboard */,
 				D810BC221BC20A7800152007 /* Assets.xcassets */,
 				D810BC241BC20A7800152007 /* LaunchScreen.storyboard */,
@@ -294,6 +299,7 @@
 				D810BC1E1BC20A7800152007 /* ViewController.m in Sources */,
 				D810BC1B1BC20A7800152007 /* AppDelegate.m in Sources */,
 				D810BC181BC20A7800152007 /* main.m in Sources */,
+				D8E70DED1D0B1073003B9E76 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
