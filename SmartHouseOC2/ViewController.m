@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XMLParser.h"
+#import "JLHBartTimes.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
@@ -466,6 +467,11 @@
     // 3
     self.TextView.text = @"Get BART from 12th St\n";
     [downloadTask resume];
+}
+
+
+NSString* getUrlString (NSString* url) {
+    return @"string";
 }
 
 
